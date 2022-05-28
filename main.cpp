@@ -37,9 +37,8 @@ void merge(vector<int> &arr, int start, int mid, int end) {
 
 void merge_sort_bottom_up(vector<int> &arr) {
     for (int k = 2; k / 2 < arr.size(); k = k * 2) {
-        for (int i = 0; i * k < arr.size(); i++) {
-            int start = i * k;
-            int end = i * k + k - 1; //ideal end used to compute mid
+        for (int start = 0; start < arr.size(); start = start + k) {
+            int end = start + k - 1; //ideal end used to compute mid
             int mid = (start + end) / 2;
             if (mid >= arr.size()) continue; //mid over arr size, so there is no need to sort anymore, continue
             end = (end < arr.size()) ? end : arr.size() - 1; //real end
