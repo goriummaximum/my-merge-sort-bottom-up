@@ -24,4 +24,4 @@ Proof: imagine we have 2 subarrays [A...B] and [C..D] are already sorted, do the
 Time: ```O(nlogn)```, space: ```O(n)``` because there is additional vector created when merging.  
 
 ## An example
-<img src="https://github.com/goriummaximum/my-merge-sort-bottom-up/blob/main/merge-sort-example.png" height="500">  
+<img src="https://github.com/goriummaximum/my-merge-sort-bottom-up/blob/main/merge-sort-example.png" width="1000">  
